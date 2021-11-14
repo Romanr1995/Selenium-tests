@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MyFirstTest {
 
-    private WebDriver driver = new ChromeDriver(new ChromeDriverService.Builder().withVerbose(true).build());
+    private WebDriver driver;
     private WebDriverWait wait;
 
     @Before
@@ -20,7 +20,7 @@ public class MyFirstTest {
 
     @Test
     public void myFirstTest() {
-        driver.get("https://www.google.ru/");
+        driver.get("https://yandex.ru/");
     }
 
     @Test
