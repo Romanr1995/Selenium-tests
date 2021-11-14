@@ -1,5 +1,6 @@
 package ru.stqa.tests.selenium;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -23,7 +24,7 @@ public class MyFirstTest {
         driver.get("https://yandex.ru/");
     }
 
-    @Test
+    @After
     public void stop() {
         driver.quit();
         driver = null;
